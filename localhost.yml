@@ -1,0 +1,82 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+#    homebrew_tap: tap={{ item }}
+#    with_items:
+#      - homebrew/homebrew-php
+    homebrew_packages_taps:
+      - homebrew/binary
+      - homebrew/dupes
+      - homebrew/apache
+      - homebrew/versions
+      - homebrew/php
+    homebrew_packages_packages:
+      - { name: readline }
+      - { name: openssl, state: linked }
+      - { name: ansible }
+      - { name: cmake }
+      - { name: ctags }
+      - { name: direnv }
+      - { name: docker }
+      - { name: git }
+      - { name: jq }
+      - { name: hub }
+      - { name: imagemagick }
+      - { name: mercurial }
+      - { name: mysql }
+      - { name: packer }
+      - { name: pkg-config }
+      - { name: pwgen }
+      - { name: python }
+      - { name: reattach-to-user-namespace }
+      - { name: redis }
+      - { name: subversion }
+      - { name: the_silver_searcher }
+      - { name: tig }
+      - { name: tmux }
+      - { name: xz }
+      - { name: vim }
+      - { name: wget }
+      - { name: zsh, install_options: disable-etcdir }
+      - { name: httpd24 }
+      - { name: php56 }
+      - { name: php56-xdebug }
+      - { name: php56-redis }
+      - { name: php56-ssh2 }
+      - { name: php56-solr }
+      - { name: composer }
+      - { name: htop-osx }
+    homebrew_cask_packages_packages:
+      - atom
+      - firefox
+      - google-chrome
+      - google-japanese-ime
+      - slack
+      - iterm2
+      - java
+      - mysqlworkbench
+      - skype
+      - vagrant
+      - virtualbox
+      - alfred
+      - bettertouchtool
+      - karabiner
+      - kobito
+      - flash-player
+      - phpstorm
+      - dash
+      - evernote
+      - dropbox
+      - coteditor
+      - sourcetree
+      - freesmug-chromium
+      - genymotion
+    atom_packages_packages:
+      - project-manager
+      - recent-files
+  roles:
+    - hnakamur.homebrew-packages
+    - hnakamur.homebrew-cask-packages
+    - hnakamur.atom-packages
