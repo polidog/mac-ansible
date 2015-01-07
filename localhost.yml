@@ -46,6 +46,7 @@
       - { name: composer }
       - { name: htop-osx }
       - { name: rbenv }
+      - { name: lua }
     homebrew_cask_packages_packages:
       - atom
       - firefox
