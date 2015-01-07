@@ -73,6 +73,7 @@
       - sourcetree
       - freesmug-chromium
       - genymotion
+      - boot2docker
     atom_packages_packages:
       - project-manager
       - recent-files
