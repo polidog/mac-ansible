@@ -45,6 +45,7 @@
       - { name: php56-solr }
       - { name: composer }
       - { name: htop-osx }
+      - { name: rbenv }
     homebrew_cask_packages_packages:
       - atom
       - firefox
