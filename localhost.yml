@@ -47,6 +47,7 @@
       - { name: htop-osx }
       - { name: rbenv }
       - { name: lua }
+      - { name: go }
     homebrew_cask_packages_packages:
       - atom
       - firefox
