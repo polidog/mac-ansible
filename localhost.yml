@@ -46,6 +46,7 @@
       - { name: composer }
       - { name: htop-osx }
       - { name: rbenv }
+      - { name: vim, install_options: with-lua }
       - { name: lua }
       - { name: go }
     homebrew_cask_packages_packages:
