@@ -75,6 +75,7 @@
       - freesmug-chromium
       - genymotion
       - boot2docker
+      - lastfm
     atom_packages_packages:
       - project-manager
       - recent-files
