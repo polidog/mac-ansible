@@ -1,3 +1,0 @@
-[submodule "pip"]
-	path = pip
-	url = https://github.com/philipcristiano/ansible-playbook-pip.git
