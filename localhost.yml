@@ -50,6 +50,7 @@
       - { name: lua }
       - { name: go }
       - { name: git-flow }
+      - { name: nodebrew }
     homebrew_cask_packages_packages:
       - atom
       - firefox
