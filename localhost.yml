@@ -49,6 +49,7 @@
       - { name: vim, install_options: with-lua }
       - { name: lua }
       - { name: go }
+      - { name: git-flow }
     homebrew_cask_packages_packages:
       - atom
       - firefox
