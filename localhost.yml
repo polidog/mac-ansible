@@ -51,6 +51,7 @@
       - { name: go }
       - { name: git-flow }
       - { name: nodebrew }
+      - { name: ruby-build, install_options: HEAD }
     homebrew_cask_packages_packages:
       - atom
       - firefox
