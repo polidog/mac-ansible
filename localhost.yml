@@ -80,6 +80,9 @@
       - genymotion
       - boot2docker
       - lastfm
+      - packer
+      - heroku-toolbelt
+      - toggldesktop
     atom_packages_packages:
       - project-manager
       - recent-files
