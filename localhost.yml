@@ -43,6 +43,7 @@
       - { name: php56-redis }
       - { name: php56-ssh2 }
       - { name: php56-solr }
+      - { name: php56-apcu }
       - { name: composer }
       - { name: htop-osx }
       - { name: rbenv }
@@ -53,6 +54,18 @@
       - { name: nodebrew }
       - { name: ruby-build, install_options: HEAD }
       - { name: rbenv }
+      - { name: hugo }
+      - { name: libiconv }
+      - { name: rsync }
+      - { name: rust }
+      - { name: fig }
+      - { name: qt4 }
+      - { name: pstree }
+      - { name: watchman }
+      - { name: flow }
+      - { name: pdftohtml }
+      - { name: scala }
+      - { name: ghc }
     homebrew_cask_packages_packages:
       - atom
       - firefox
@@ -83,9 +96,15 @@
       - packer
       - heroku-toolbelt
       - toggldesktop
+      - chefdk
+      - nosleep
+      - coteditor
+      - haskell-platform
     atom_packages_packages:
       - project-manager
       - recent-files
+      - go-plus
+      - solarized-dark-syntax
   roles:
     - hnakamur.homebrew-packages
     - hnakamur.homebrew-cask-packages
